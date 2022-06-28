@@ -1,0 +1,19 @@
+#landing{
+
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: #1d2630;
+}
+
