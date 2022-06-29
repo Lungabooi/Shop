@@ -1,241 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+<title>LC Properties</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <section id="products">
-    <div id="container">
-      <div class="text-center">
-        <h1>
-          Products
-        </h1>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>LC</b> Properties</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#Properties" class="w3-bar-item w3-button"> Properties</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/image/city-5974876_1920.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>LC</b></span> <span class="w3-hide-small w3-text-light-grey">Properties</span></h1>
+    <div class="input-group">
+        <input id="search-input" type="search" class="form-control" placeholder="Search anything...">  
+          <button id="search-button" type="button" class="btn btn-primary " width:50% height:50%>
+        <i class="fa fa-search"></i>
+          </button>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Tabs navs --><div class="tab-content shadow-lg p-3 mb-5 bg-body rounded" id="pills-tabContent">
+  <ul class="nav nav-pills mb-3  d-flex justify-content-center " id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+  
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select></div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select></div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select></div>
+  </div>
+  
+  
+  <!-- Tabs content -->
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="Properties">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Properties All</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="./images/house1.jpg" alt="House" style="width:100%">
+        <h3>2 bedroom apartment for sale in</h3>
+        <h4> Cape Town</h4>
+        <h5> R5 000 000 .00</h5>
       </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="./images/house2.jpg" alt="House" style="width:100%">
+        <h3>4 bedroom house for sale in Cape Town</h3>
+        <h5> R1 200 000 .00</h5>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/images/house3.jpg" alt="House" style="width:100%">
+        <h3> 2 bedroom house for sale in Lansdowne</h3>
+        <h5> R3 800 000 .00</h5>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/images/house4.jpg" alt="House" style="width:100%">
+        <h3>2 bedroom house for sale in Habour Arch in Foreshore</h3>
+        <h5> R5 000 000 .00</h5>
+      </div>
+    </div>
+  </div>
 
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/images/house5.jpg" alt="House" style="width:99%">
+        <h3>2 bedroom house for sale in Durbanville </h3>
+        <h5> R900 000 .00</h5>
+      </div>
     </div>
-    <div class="main row justify content center ">   <form id="items" class=" mt-5 d-flex-justify content center">
-    <label for="item" class="col-10 mb-2" id="item">item</label>
-    <input class="form-control" type="text" placeholder="item" aria-label="default input example" required>
-    <label for="title" class="col-10 mb-2" id="title">title</label>
-    <input class="form-control" type="text" placeholder=" title" aria-label="default input example" required>
-    <label for="size" class="col-10 mb-2" id="size">size</label>
-    <input class="form-control" type="text" placeholder="size" aria-label="default input example" required>
-    <div><input type="submit" value="submit" class=" btn btn-success add-btn mt-4">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/images/house6.jpg" alt="House" style="width:99%">
+        <h3>6 bedroom house for sale in Contasntia Upper</h3>
+        <h5> R12 000 000 .00</h5>
+      </div>
     </div>
- </form>
- <div class= "col-10 mt-5">
-  <table class="table striped table-dark">
-    <thead>
-      <th>item</th>
-      <th>title</th>
-      <th>size</th>
-      <th>Manipulation</th>
-     
-    </thead>
-    <tbody  id="product-list" class="delete">
-    <tr>
-      <td>Jean
-      </td><td>man
-      </td>
-      <td>32
-      </td>
-      <td><a href="#" class=" btn btn-warning bt-sm edit">Edit</a>
-        <a href="#" type="reset" value="Reset" id="btn"class=" btn btn-danger bt-sm delete danger" onclick="Geeks()">Delete</a>
-        <a href="#" type="add" value="add" onclick="onclick" id="btn"class=" btn btn-primary bt-sm add">Add</a>
-      </td>
-    </tr></tbody>
-  </table>
- </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/images/house7.jpg" alt="House" style="width:99%">
+        <h3>4 bedroom house for sale in Hout Bay</h3>
+        <h5> R7 000 000 .00</h5>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/images/house8.jpg" alt="House" style="width:99%">
+        <h3>3 bedroom house apartment in Clairmont</h3>
+        <h5> R9 000 000 .00</h5>
+      </div>
+    </div>
+  </div>
+ 
+ 
+  <div id="container" class="product">
+
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Founded in 1998, LC Property was the first property brand of its kind in South Africa. Through our pioneering spirit we are able to inform, inspire and grow your property journey. In fact, if you are reading this your property journey has already started. Whether you are looking to buy or rent, LC Property has created the space to find your place.
+
+        LC Property will provide you with the tools you need to grow with South Africa’s changing spaces. We have the information you need to make the right choices. Not only will we show you where the properties are, we will tell you how much they cost and who to contact in order to take the next step. And if at any stage you feel you need a helping hand please feel free to call our helpline.
+    </p>
+  </div>
+
+ 
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+
+
+<!-- End page content -->
 </div>
 
 
+<!-- Footer -->
+<footer class="d-flex justify-content-center w3-black w3-padding-16">
+  <p>Powered by LC Properties</a></p>
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
 
-
-
-
-  </section>
-
-    <!-- <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mt-5">
-            <button type="button" class="btn btn-primary">Primary</button>
-      
-          </div>
-      
-          <div class="col-lg-4 col-md-6">
-            <button type="button" class="btn btn-primary">Primary</button>
-      
-          </div>
-      
-          <div class="col-lg-4 col-md-6">
-            <button type="button" class="btn btn-primary">Primary</button>
-      
-          </div>
-        </div>
-        </div>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-      </div> -->
-
-<!-- </div> -->
-<!-- <section id="products">
-
-    <table class="table align-middle mb-0 bg-white">
-        <thead class="bg-light">
-          <tr>
-            <th>Product</th>
-            <th>Title</th>
-            <th>Price</th>
-            <th>Position</th>
-            <th>Catagory</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style="width: 45px; height: 45px"
-                    class="rounded-circle"
-                    />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Software engineer</p>
-              <p class="text-muted mb-0">IT department</p>
-            </td>
-            <td>
-              <span class="badge badge-success rounded-pill d-inline">Active</span>
-            </td>
-            <td>Senior</td>
-            <td>
-              <button type="button" class="btn btn-link btn-sm btn-rounded">
-                Edit
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img
-                    src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-                    class="rounded-circle"
-                    alt=""
-                    style="width: 45px; height: 45px"
-                    />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">Alex Ray</p>
-                  <p class="text-muted mb-0">alex.ray@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Consultant</p>
-              <p class="text-muted mb-0">Finance</p>
-            </td>
-            <td>
-              <span class="badge badge-primary rounded-pill d-inline"
-                    >Onboarding</span
-                >
-            </td>
-            <td>Junior</td>
-            <td>
-              <button
-                      type="button"
-                      class="btn btn-link btn-rounded btn-sm fw-bold"
-                      data-mdb-ripple-color="dark"
-                      >
-                Edit
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img
-                    src="https://mdbootstrap.com/img/new/avatars/7.jpg"
-                    class="rounded-circle"
-                    alt=""
-                    style="width: 45px; height: 45px"
-                    />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">Kate Hunington</p>
-                  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Designer</p>
-              <p class="text-muted mb-0">UI/UX</p>
-            </td>
-            <td>
-              <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-            </td>
-            <td>Senior</td>
-            <td>
-              <button
-                      type="button"
-                      class="btn btn-link btn-rounded btn-sm fw-bold"
-                      data-mdb-ripple-color="dark"
-                      >
-                Edit
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-
-
-
-
-
-
-
-
-
-
-
-</section> -->
-
-    <!-- <div class="container">
-
-
-        <div class="card text-center">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-footer text-muted">
-              2 days ago
-            </div>
-          </div>
-    </div> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script src="./index.js"></script>
+    
 </body>
 </html>
