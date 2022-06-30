@@ -11,3 +11,10 @@ section{
 }
 
 
+#card {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}

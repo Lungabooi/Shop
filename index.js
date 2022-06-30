@@ -75,8 +75,8 @@ function showItems(properties) {
     document.querySelector("#container").innerHTML = " ";
     properties.forEach(property => { 
     document.querySelector("#container").innerHTML += `
-    <div class=".product">
-    <img src="${property.img}"/>
+    <div class="card " style=" width: fit-content">
+    <img src="${property.img}" style="width:300px"/>
     <h3>"${property.id}"<h3/>
     <div>R${property.price}</div>
     <h3>"${property.location}"<h3/>
