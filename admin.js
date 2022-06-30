@@ -95,7 +95,8 @@ function showItems(properties){
     </td>
     <td>
         <a href="#" type="reset" value="Reset" class=" btn btn-danger bt-sm delete danger" onclick="DelProperty(${property.id})">Delete</a>
-        <a href="#" type="add" value="add" class=" btn btn-primary bt-sm add">Add</a></td>
+        <a href="#" type="add" value="add" class=" btn btn-primary bt-sm add" onclick="addRow()"(${property.id})  >Add</a></td>
+
     </tr>
     `
     });
@@ -112,7 +113,7 @@ function DelProperty(id){
     console.log(id)
 properties = properties.filter(property =>{
     console.log(property)
-    return property.property_id !== id
+    return properties.property_id !== id
 })
     localStorage.setItem("properties",JSON.stringify(properties));
     showItems(
@@ -127,23 +128,57 @@ function clearField(){
 }
 
 //add items
-document.querySelector("#product-list").addEventListener("submit", (e) =>{
+document.querySelector("form").addEventListener("submit", (e) =>{
     e.preventDefault();
     // get items
-    const item = document.querySelector("#item").value;
+    const id = document.querySelector("#id").value;
+    const image = document.querySelector("#image").value;
+    const price = document.querySelector("#price").value;
     const title = document.querySelector("#title").value;
-    const size = document.querySelector("#size").value;
+    const location = document.querySelector("#Location").value;
+    const category = document.querySelector("#catergory").value;
         const row = document.createComment("td");
-        row.innerHTML = `
-        <td>${item}</td>
-        <td>${title}</td>
-        <td>${size}</td>
-        <td>${catagory}</td><td>
-        <a href="#" type="reset" value="Reset" class=" btn btn-danger bt-sm delete danger" onclick="Geeks()">Delete</a>
-        <a href="#" type="add" value="add" class=" btn btn-primary bt-sm add">Add</a></td>
+        row.innerHTML = `<tr>
+        <td>${property.id}</td>
+        <td>${property.img}</td>
+        <td>${property.price}</td>
+        <td>${property.title}</td>
+        <td>${property.location}</td>
+        <td>${property.category}</td>
+        <td>
+        < type="reset" value="Reset" class=" btn btn-danger bt-sm delete danger" onclick="Geeks()">Delete</a>
+        <  type="add" value="add"  id="btn" class=" btn btn-primary bt-sm add" onclick="addRow()>Add</a>
+        </td>
+        </tr>
         `
     }
     
-);
+    
+); localStorage.setItem("properties",JSON.stringify(properties));
+showItems
 
-// var inputValue = document.getElementsByTagName("input").value;
+//Update items
+function updateItem(id){
+    const listing= properties.find(linsting =>
+        {return listing.id == id})
+}
+// add items
+  function addRow() {
+    const property = {
+      id: properties.length + 1,
+      img: document.getElementById("#image").value,
+      title: document.getElementById("#id").value,
+      price: document.getElementById("#price").value,
+      title: document.getElementById("#title").value,
+      Location: document.getElementById("#Location").value,
+      category: document.getElementById("#catergory").value,
+    };
+  
+    properties.push(property);
+    localStorage.setItem("properties", JSON.stringify(properties));
+    showAdminProperties(properties);
+  }
+  
+  document
+    .getElementById("#btn")
+    .addEventListener("click", property);

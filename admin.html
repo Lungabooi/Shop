@@ -22,18 +22,31 @@
     </div>
     <div class="main row justify content center ">   <form id="items" class=" mt-5 d-flex-justify content center">
     <label for="item" class="col-10 mb-2" id="id">id</label>
-    <input class="form-control" type="text" placeholder="id" aria-label="default input example" required>
+    <input class="form-control" type="text" placeholder="image" aria-label="default input example" >
+    <label for="title" class="col-10 mb-2" id="image">image</label>
+    <input class="form-control" type="text" placeholder="id" aria-label="default input example" >
     <label for="title" class="col-10 mb-2" id="price">price</label>
-    <input class="form-control" type="text" placeholder=" price" aria-label="default input example" required>
+    <input class="form-control" type="text" placeholder=" price" aria-label="default input example" >
     <label for="size" class="col-10 mb-2" id="title">title</label>
-    <input class="form-control" type="text" placeholder="title" aria-label="default input example" required>
+    <input class="form-control" type="text" placeholder="title" aria-label="default input example" >
     <label for="size" class="col-10 mb-2" id="Location">Location</label>
-    <input class="form-control" type="text" placeholder="Location" aria-label="default input example" required>
+    <input class="form-control" type="text" placeholder="Location" aria-label="default input example" >
     <label for="size" class="col-10 mb-2" id="Category">catergory</label>
-    <input class="form-control" type="text" placeholder="size" aria-label="default input example" required>
-    <div><input type="submit" value="submit" class=" btn btn-success add-btn mt-4">
+    <input class="form-control" type="text" placeholder="catergory" aria-label="default input example" >
+    <div><input type="submit" value="submit"  class=" btn btn-success add-btn mt-4">
     </div>
  </form>
+
+
+
+
+
+
+
+
+
+
+ 
  <div class= "col-10 mt-5">
   <table class="table striped table-dark">
     <thead>
@@ -46,7 +59,7 @@
      
     </thead>
     <tbody  id="product-list" class="delete">
-    <tr>
+    <tr id="row">
       <td> 1
       </td><td>R500000
       </td>
@@ -56,7 +69,10 @@
       <td> Town house</td>
       <td><a href="#" class=" btn btn-warning bt-sm edit">Edit</a>
         <a href="#" type="reset" value="Reset" id="btn"class=" btn btn-danger bt-sm delete danger" onclick="DelProperty()">Delete</a>
-        <a href="#" type="add" value="add" onclick="onclick" id="btn"class=" btn btn-primary bt-sm add" ondblclick="add()">Add</a>
+        <a href="#" type="add" value="add"  id="btn"class=" btn btn-primary bt-sm add" onclick="addRow()">Add</a>
+        
+        
+        
       </td>
       
     </tr>
