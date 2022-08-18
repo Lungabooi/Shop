@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>LC Properties</title>
+<title>Fruit and Veg </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./index.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -12,10 +14,10 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>LC</b> Properties</a>
+    <a href="#home" class="w3-bar-item w3-button"> Ready Made Veggies</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#Properties" class="w3-bar-item w3-button"> Properties</a>
+      <a href="#Properties" class="w3-bar-item w3-button"> Products</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
@@ -24,13 +26,9 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="/images/city-5974876_1920.jpg" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" data-aos="fade-right" src="/images/vegetable.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>LC</b></span> <span class="w3-hide-small w3-text-light-grey">Properties</span></h1>
-    <div class="input-group">
-        <input id="search-input" type="search" class="form-control" placeholder="Search anything...">  
-          <button id="search-button" type="button" class="btn btn-primary " width:50% height:50%>
-        <i class="fa fa-search"></i>
+    <h1 class="w3-xxlarge w3-text-white" data-aos="flip-up"> <span class="w3-hide-small w3-text-light-grey">Ready Made Veggies</span></h1>
           </button>
     </div>
   </div>
@@ -46,111 +44,83 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="Properties">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Properties All</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Our products</h3>
+  </div>
+  
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container" id="">
+        
+        <img src="./images/cabbage (1).jpg" alt="House" style="width:100%">
+        <h4>Cabbage</h4>
+        <h5>R39.99/ Kg</h5>
+
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        
+        <img src="./images/carrots.jpg" alt="House" style="width:100%">
+        <h4> Carrots</h4>
+        <h5>R69.99/ Kg</h5>
+      
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+
+        <img src="./images/bell-peppers-1386467_1920.jpg" alt="House" style="width:100%">
+        <h4> Peppers</h4>
+        <h5>R11.99/ Kg</h5>
+        
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+
+        <img src="./images/onions-1397037_1920.jpg" alt="House" style="width:100%">
+        <h4> Onions</h4>
+        <h5>R69.99/ Kg</h5>
+        
+      </div>
+    </div>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="./images/house1.jpg" alt="House" style="width:100%">
-        <h3>2 bedroom apartment for sale in</h3>
-        <h4> Cape Town</h4>
-        <h5> R5 000 000 .00</h5>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="./images/house2.jpg" alt="House" style="width:100%">
-        <h3>4 bedroom house for sale in Cape Town</h3>
-        <h5> R1 200 000 .00</h5>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="./images/house3.jpg" alt="House" style="width:100%">
-        <h3> 2 bedroom house for sale in Lansdowne</h3>
-        <h5> R3 800 000 .00</h5>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="./images/house4.jpg" alt="House" style="width:100%">
-        <h3>2 bedroom house for sale in Habour Arch in Foreshore</h3>
-        <h5> R5 000 000 .00</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="./images/house5.jpg" alt="House" style="width:99%">
-        <h3>2 bedroom house for sale in Durbanville </h3>
-        <h5> R900 000 .00</h5>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="./images/house6.jpg" alt="House" style="width:99%">
-        <h3>6 bedroom house for sale in Contasntia Upper</h3>
-        <h5> R12 000 000 .00</h5>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="./images/house7.jpg" alt="House" style="width:99%">
-        <h3>4 bedroom house for sale in Hout Bay</h3>
-        <h5> R7 000 000 .00</h5>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="./images/house8.jpg" alt="House" style="width:99%">
-        <h3>3 bedroom house apartment in Clairmont</h3>
-        <h5> R9 000 000 .00</h5>
-      </div>
-    </div>
-  </div>
-   <!-- Tabs navs --><div class="tab-content shadow-lg p-3 mb-5 bg-body rounded" id="pills-tabContent">
-    <ul class="nav nav-pills mb-3  d-flex justify-content-center " id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Rent</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Buy</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Rent to buy</button>
-      </li>
-    </ul>
     
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><select class="form-select" aria-label="Default select example">
-          <option selected>Location</option>
-          <option value="1">Cape Town </option>
-          <option value="2">Hout Bay</option>
-          <option value="3">Durbanville</option>
-        </select></div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><select class="form-select" aria-label="Default select example">
-          <option selected>Catergory</option>
-          <option value="1">Suburb</option>
-          <option value="2">Township</option>
-          <option value="3">City</option>
-        </select></div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><select class="form-select" aria-label="Default select example">
-          <option selected>Prices</option>
-          <option value="1">10000000 : 3000000</option>
-          <option value="2">4000000 : 7000000</option>
-          <option value="3">8000000 : 12000000</option>
-        </select></div>
+        <img src="./images/potatoes-1585075_1920.jpg" alt="House" style="width:99%">
+        <h4> Potatoes</h4>
+        <h5>R74.99/ Kg</h5>
+      </div>
     </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+  
+        <img src="./images/tomatoes-1280859_1280.jpg" alt="House" style="width:99%">
+        <h4> Tomatoes</h4>
+        <h5>R69.99/ Kg</h5>
+        
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="./images/garlic-3419544_1920.jpg" alt="House" style="width:99%">
+        <h4> Garlic</h4>
+        <h5>R6.99/ Kg</h5>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+
+        <img src="./images/food-1834645_1920.jpg" alt="House" style="width:99%">
+        <h4> Letucce</h4>
+        <h5>R49.99/ Kg</h5>
+      </div>
+    </div>
+  </div>
  
  
   <div id="container" class="product d-flex flex-direction-row d-flex flex-wrap  d-flex justify-content-center">
@@ -159,11 +129,10 @@
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Founded in 1998, LC Property was the first property brand of its kind in South Africa. Through our pioneering spirit we are able to inform, inspire and grow your property journey. In fact, if you are reading this your property journey has already started. Whether you are looking to buy or rent, LC Property has created the space to find your place.
-
-        LC Property will provide you with the tools you need to grow with South Africa’s changing spaces. We have the information you need to make the right choices. Not only will we show you where the properties are, we will tell you how much they cost and who to contact in order to take the next step. And if at any stage you feel you need a helping hand please feel free to call our helpline.
-    </p>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Us</h3>
+    <h4>Ready Made Veggies is a small and newly established business and a middleman wholesale which buys vegetables from farmers and wholesalers it prepares
+      them by peeling, cleaning, dicing, slicing , packaging them in different packages which is suitable for their needs. It then supplies them to supermarket, restaurante and also nearby neighbours.
+    </h4>
   </div>
 
  
@@ -171,7 +140,7 @@
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
+    <p>Lets get in touch and talk about our product.</p>
     <form action="/action_page.php" target="_blank">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
@@ -191,11 +160,15 @@
 
 <!-- Footer -->
 <footer class="d-flex justify-content-center w3-black w3-padding-16">
-  <p>Powered by LC Properties</a></p>
+  <p>Fruit and Veg || All rights reserved  &copy;  by Safe Hub  2022</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="./index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
 
